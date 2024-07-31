@@ -1,0 +1,114 @@
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6,
+NON EMPTY [Ship Date].[Calendar Semester].&[2005]&[1] ON 7
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6,
+NON EMPTY [Ship Date].[Calendar Semester].&[2005]&[1] ON 7,
+NON EMPTY [Product].[Size].[Size] ON 8
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6,
+NON EMPTY [Ship Date].[Calendar Semester].&[2005]&[1] ON 7,
+NON EMPTY [Product].[Size].[Size] ON 8,
+NON EMPTY [Customer].[Gender].[Gender] ON 9
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6,
+NON EMPTY [Ship Date].[Calendar Semester].&[2005]&[1] ON 7,
+NON EMPTY [Product].[Size].[Size] ON 8,
+NON EMPTY [Customer].[Gender].[Gender] ON 9,
+NON EMPTY [Customer].[Occupation].&[Professional] ON 10
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
+
+SELECT
+NON EMPTY [Product].[Product Line].[Product Line] ON 0,
+NON EMPTY {[Customer].[Education].[Education]} ON 1,
+NON EMPTY [Order Date].[Calendar Year].[Calendar Year] ON 2,
+NON EMPTY [Ship Date].[Calendar Year].[Calendar Year] ON 3,
+NON EMPTY [Product].[Class].[Class] ON 4,
+NON EMPTY [Customer].[Total Children].[Total Children] ON 5,
+NON EMPTY [Customer].[Country-Region].[Country-Region] ON 6,
+NON EMPTY [Ship Date].[Calendar Semester].&[2005]&[1] ON 7,
+NON EMPTY [Product].[Size].[Size] ON 8,
+NON EMPTY [Customer].[Gender].[Gender] ON 9,
+NON EMPTY [Customer].[Occupation].&[Professional] ON 10,
+NON EMPTY [Due Date].[Calendar Year].&[2014] ON 11
+FROM [Analysis Services Tutorial]
+WHERE ([Measures].[Sales Amount]);
